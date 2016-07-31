@@ -24,6 +24,8 @@ public class Move {
 
                 if (field[x][y] == '*') {
                     break;
+                }else{
+                    System.out.println("This coordinates is already taken, try one more time.");
                 }
             }
 
