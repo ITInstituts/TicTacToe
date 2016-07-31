@@ -1,10 +1,19 @@
 package com.company;
 
-/**
- * Created by Maxim on 25.07.2016.
- */
-public class Figure {
-    private String x = "\u274C";
-    private String o = "\u25EF";
-    private String nullFigure = "\u25A0";
+import static sun.applet.AppletViewer.x;
+
+
+public enum Figure {
+    X("❌"),
+    O("◯"),
+    EMPTY("■");
+
+    private String mark;
+
+
+    Figure(String newMark) {
+        this.mark = newMark;
+    }
+
+
 }
